@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter - Red Social</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <h1 class="text-blue-500 text-2xl font-bold">Twitter</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 py-6 px-4">
+        <!-- Sidebar Izquierdo -->
+        <div class="hidden md:block col-span-1">
+            <nav class="space-y-6 sticky top-16">
+                <a href="home.html" class="text-2xl font-bold text-blue-500">Inicio</a>
+                <a href="explorar.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50">Explorar</a>
+                <a href="mensajes.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50">Mensajes</a>
+                <a href="grok.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50">Grok</a>
+                <a href="perfil.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50">Perfil</a>
+                <a href="logout.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50">Cerrar Sesión</a>
+            </nav>
+        </div>
+
+        <!-- Contenido Central -->
+        <div class="md:col-span-2 space-y-6">
+            <!-- Barra de búsqueda -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <input type="search" placeholder="Buscar en Twitter" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none">
+            </div>
+
+            <!-- Tendencias -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="font-bold text-xl mb-4">Tendencias para ti</h2>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-xs text-gray-500">Política · Tendencia</p>
+                            <p class="font-bold">#Elecciones2024</p>
+                            <p class="text-sm text-gray-500">125K Tweets</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-xs text-gray-500">Deportes · Tendencia</p>
+                            <p class="font-bold">Premier League</p>
+                            <p class="text-sm text-gray-500">87K Tweets</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-xs text-gray-500">Entretenimiento · Tendencia</p>
+                            <p class="font-bold">#Oscars</p>
+                            <p class="text-sm text-gray-500">203K Tweets</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicaciones -->
+            <div class="space-y-4">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-blue-500">🔝</span>
+                        <p class="font-bold">Breaking: Major scientific breakthrough announced</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6">
+                    <img src="example.jpg" alt="Publicación de ejemplo" class="w-full rounded-lg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Derecho -->
+        <div class="hidden md:block col-span-1">
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="font-bold text-xl mb-4">¿A quién seguir?</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="font-bold">Juan Pérez</p>
+                            <p class="text-sm text-gray-500">@juanperez</p>
+                        </div>
+                        <button class="text-white bg-blue-500 px-3 py-1 rounded-md hover:bg-blue-600">Seguir</button>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="font-bold">Ana López</p>
+                            <p class="text-sm text-gray-500">@analopez</p>
+                        </div>
+                        <button class="text-white bg-blue-500 px-3 py-1 rounded-md hover:bg-blue-600">Seguir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

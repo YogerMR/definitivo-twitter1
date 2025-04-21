@@ -1,0 +1,55 @@
+/* General */
+body {
+  background-color: #f5f8fa;
+  font-family: Arial, sans-serif;
+}
+
+/* Main content */
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Inputs */
+.input-field {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.close-modal {
+  background-color: #ff4d4d;
+}
+
+.close-modal:hover {
+  background-color: #e04141;
+}

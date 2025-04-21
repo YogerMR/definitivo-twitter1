@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter - Red Social</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <h1 class="text-blue-500 text-2xl font-bold">Twitter</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 py-6 px-4">
+
+        <!-- Sidebar Izquierdo -->
+        <aside class="hidden md:block col-span-1">
+            <nav class="space-y-6 sticky top-16">
+                <a href="home.html" class="text-2xl font-bold text-blue-500">Inicio</a>
+                <a href="explorar.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50">Explorar</a>
+                <a href="mensajes.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50">Mensajes</a>
+                <a href="perfil.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50">Perfil</a>
+                <button id="logoutButton" class="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Cerrar sesión</button>
+            </nav>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <main class="col-span-3 md:col-span-2">
+            <h1 class="text-3xl font-bold mb-6">Perfil</h1>
+            <div class="user-info mb-4">
+                <p><strong>Nombre de usuario:</strong> <span id="userName">Cargando...</span></p>
+                <p class="break-words max-w-full"><strong>Biografía:</strong> <span id="userBio">Cargando...</span></p>
+            </div>
+            <button id="editProfileBtn" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
+                Editar Perfil
+            </button>
+            <!-- Contenedor para mostrar tweets -->
+            <div id="tweetsContainer" class="space-y-4"></div>
+            
+            <!-- Modal para editar el perfil -->
+            <div class="modal hidden" id="editProfileModal">
+                <div class="modal-content p-6 bg-white rounded-md shadow-lg max-w-sm mx-auto">
+                    <h2 class="text-2xl font-bold mb-4">Editar Perfil</h2>
+                    <input type="text" id="newUserName" class="w-full mb-4 p-2 border rounded-md" placeholder="Nuevo nombre de usuario">
+                    <textarea id="newUserBio" rows="4" class="w-full mb-4 p-2 border rounded-md" placeholder="Nueva biografía"></textarea>
+                    <div class="flex justify-end space-x-4">
+                        <button id="saveProfileBtn" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
+                            Guardar
+                        </button>
+                        <button id="closeModalBtn" class="text-gray-700 py-2 px-4 rounded-md hover:bg-gray-200">
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Sidebar Derecho -->
+        <aside class="hidden md:block col-span-1">
+            <div class="sticky top-16 bg-gray-50 shadow-md rounded p-4 text-gray-500">
+                <p class="text-center">Espacio para contenido adicional</p>
+            </div>
+        </aside>
+
+    </div>
+
+    <script type="module" src="js/home.js"></script>
+    <script type="module" src="js/perfil.js"></script>
+
+</body>
+</html>

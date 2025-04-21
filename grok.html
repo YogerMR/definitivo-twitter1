@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter - Red Social</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <h1 class="text-blue-500 text-2xl font-bold">Twitter</h1>
+            <nav>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 py-6 px-4">
+        <div class="hidden md:block col-span-1">
+            <nav class="space-y-6 sticky top-16">
+                <a href="inicio.html" class="text-2xl font-bold text-blue-500">Inicio</a>
+                <a href="explorar.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50">Explorar</a>
+                <a href="mensajes.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50">Mensajes</a>
+                <a href="grok.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50">Grok</a>
+                <a href="perfil.html" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-50">Perfil</a>
+                <button id="logoutButton" class="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Cerrar sesión</button>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <main class="md:col-span-2 space-y-6">
+            <section class="bg-white rounded-lg shadow p-6">
+                <h1 class="text-2xl font-bold mb-4">Presentamos Grok 2</h1>
+                <p class="text-lg">Nuestro asistente de IA, desarrollado por X</p>
+                <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-full">Suscríbete ahora</button>
+            </section>
+
+            <section class="bg-white rounded-lg shadow p-6 space-y-6">
+                <div class="feature flex items-center justify-between">
+                    <div>
+                        <h2 class="text-xl font-semibold">Echa a volar tu imaginación</h2>
+                        <p>Genera elementos visuales impresionantes con nuestras nuevas capacidades de generación de imágenes.</p>
+                    </div>
+                    <img src="/imagenes/5.jpg" alt="User" class="w-48 h-48 object-cover rounded-lg">
+                </div>
+
+                <div class="feature flex items-center justify-between">
+                    <div>
+                        <h2 class="text-xl font-semibold">Mantente informado</h2>
+                        <p>Obtén información actualizada sobre las últimas noticias y las tendencias, exclusivamente en X.</p>
+                    </div>
+                    <img src="/imagenes/3.jpg" alt="User" class="w-48 h-48 object-cover rounded-lg">
+                </div>
+
+                <div class="feature flex items-center justify-between">
+                    <div>
+                        <h2 class="text-xl font-semibold">Haz una pregunta</h2>
+                        <p>Grok te puede ayudar con tareas cotidianas, como escribir correos electrónicos, responder preguntas y proporcionar recetas.</p>
+                    </div>
+                    <img src="/imagenes/4.jpg" alt="User" class="w-48 h-48 object-cover rounded-lg">
+                </div>
+
+                <div class="feature flex items-center justify-between">
+                    <div>
+                        <h2 class="text-xl font-semibold">Programa mejor</h2>
+                        <p>Haz preguntas sobre programación o pide ayuda para aprender conceptos nuevos.</p>
+                    </div>
+                    <img src="/imagenes/6.jpg" alt="User" class="w-48 h-48 object-cover rounded-lg">
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+</html>
